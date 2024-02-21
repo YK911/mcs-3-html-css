@@ -1,0 +1,47 @@
+/* #region Base */
+body {
+  color: darkblue;
+  background-color: lightblue;
+}
+a {
+  text-decoration: none;
+}
+/* #endregion Base */
+/* #region Logo */
+.logo {
+}
+.logo-accent {
+}
+.logo-icon {
+}
+/* #endregion Logo */
+/* #region Socials */
+.socials {
+}
+.socials-dark {
+}
+.socials-light {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/* #endregion Socials */
+/* #region Header */
+.header {
+}
+.header-nav {
+}
+.header-logo {
+}
+.nav {
+}
+.nav-menu {
+}
+.nav-menu-item {
+}
+.nav-menu-link {
+}
+/* #endregion Header */
