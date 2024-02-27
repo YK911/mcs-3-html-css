@@ -58,6 +58,14 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.container {
+  width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
 .main-title {
   font-weight: 500;
   font-size: 28px;
