@@ -1,0 +1,97 @@
+/* #region */
+.wrapper {
+  width: 800px;
+  /* min-height: 600px; */
+  /* padding: 20px; */
+  /* margin: 0 auto; */
+  /* margin-top: 60px; */
+
+  list-style-type: none;
+  border-radius: 10px;
+  background-color: lightgreen;
+  outline: 5px solid rgb(75, 167, 75);
+  outline-offset: -5px;
+  padding: 0;
+}
+
+.item {
+  /* width: 150px; */
+  /* height: 150px; */
+  font-size: 64px;
+  line-height: 150px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  background-color: slateblue;
+  outline: 5px solid rgb(45, 35, 125);
+  outline-offset: -5px;
+}
+/* #endregion */
+
+/*=====================================*\
+  FLEX BOX
+\*=====================================*/
+:root {
+  --card-w: 150px;
+  --card-h: var(--card-w, 100px);
+  --items: 4;
+  --indent-vertical: 30px;
+  --indent-horizontal: var(--indent-vertical);
+}
+div {
+  width: 730px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  row-gap: var(--indent-horizontal);
+  column-gap: var(--indent-vertical);
+  /* margin: -15px; */
+
+  /* justify-content: space-between; */
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* align-content: stretch; */
+  /* flex-wrap: nowrap; */
+}
+.item {
+  /* width: calc(
+    (100% - var(--indent-vertical) * (var(--items) - 1)) / var(--items)
+  ); */
+  width: 100px;
+
+  /* height: var(--item-size); */
+  /* height: calc(100px / 0); */
+  /* margin: 15px; */
+  /* margin: 30px; */
+  /* Default properties */
+  /* max-width: 100px; */
+  /* min-width: 200px; */
+  /* flex-basis: 150px; */
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+.item:before {
+  /* content: attr(data-content); */
+  /* content: ''; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: block;
+  padding-bottom: 100%;
+}
+.reviews {
+  --indent-vertical: 20px;
+  --items: 5;
+}
+.cards {
+  --indent-vertical: 60px;
+  --indent-horizontal: 10px;
+  --items: 3;
+}
