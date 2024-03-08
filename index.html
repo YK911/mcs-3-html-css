@@ -41,7 +41,7 @@
           </a>
           <ul class="nav-menu">
             <li class="nav-menu-item">
-              <a class="nav-menu-link" href="#home">Home</a>
+              <a class="nav-menu-link current" href="#home">Home</a>
             </li>
             <li class="nav-menu-item">
               <a class="nav-menu-link" href="#made">How it’s made?</a>
@@ -115,22 +115,29 @@
                 </button>
               </li>
             </ul>
-            <a class="hero-link" href="#">
+            <a class="hero-link" href="#benefits">
               scroll down
-              <svg class="hero-link-icon" width="22" height="22">
-                <use href="./images/icons.svg#arow-down"></use>
-              </svg>
+              <span class="hero-link-box">
+                <svg class="hero-link-icon" width="22" height="22">
+                  <use href="./images/icons.svg#arow-down"></use>
+                </svg>
+              </span>
             </a>
           </div>
         </div>
       </section>
       <!-- #endregion -->
       <!-- #region Benefits -->
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <div class="container">
           <h2 class="visually-hidden">Simply Chocolate Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Unsurpassed taste</h3>
               <p class="benefits-desc">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -140,6 +147,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Affordable price</h3>
               <p class="benefits-desc">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -150,6 +162,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-icon" width="32" height="32">
+                  <use href="./images/icons.svg#coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-caption">Own production</h3>
               <p class="benefits-desc">
                 We take pride in our own production process, ensuring that every
@@ -271,37 +288,49 @@
           <h2 class="section-title made-title">
             How it’s <span class="accent">made</span>?
           </h2>
-          <img
-            class="made-img"
-            src="./images/made/image.jpeg"
-            alt=""
-            width="600"
-            height="400"
-          />
-          <h3 class="made-caption">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ol class="made-list">
-            <li class="made-item">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li class="made-item">
-              At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="made-item">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li class="made-item">
-              Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li class="made-item">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-          </ol>
+          <div class="made-wrapper">
+            <div class="made-left-side">
+              <img
+                class="made-img"
+                src="./images/made/image.jpeg"
+                alt=""
+                width="600"
+                height="400"
+              />
+              <button class="made-btn" type="button">
+                <svg class="made-btn-icon" width="44" height="44">
+                  <use href="./images/icons.svg#play"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="made-right-side">
+              <h3 class="made-caption">
+                Try our chocolates today and discover&nbsp;the perfect balance
+                of flavor
+              </h3>
+              <ol class="made-list">
+                <li class="made-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="made-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="made-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="made-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="made-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- #endregion  -->
@@ -428,6 +457,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bastsellers-desc">CHOCOLATE WITH NUTS</h3>
             </li>
@@ -440,6 +477,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bastsellers-desc">CHOCOLATE WITH FRUITS</h3>
             </li>
@@ -452,6 +497,14 @@
                   width="368"
                   height="464"
                 />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
               </div>
               <h3 class="bastsellers-desc">DARK CHOCOLATE</h3>
             </li>
@@ -511,7 +564,11 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn-dark reviews-btn" type="button">
+          <button
+            class="btn btn-dark reviews-btn"
+            type="button"
+            data-modal-open
+          >
             Leave a review
           </button>
         </div>
@@ -521,76 +578,95 @@
     <!-- #region Footer -->
     <footer class="footer">
       <div class="container">
-        <p class="footer-slogan">
-          <span class="accent">Chocolate</span> a delicious cure for a bad day
-        </p>
-        <p class="footer-caption">Social networks</p>
-        <ul class="socials footer-socials">
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg class="socials-icon" width="24" height="24">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <address class="address footer-address">
-          <p class="footer-caption">Contact us</p>
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" href="tel:+380684439426">
-                +380 (68) 443-94-26
-              </a>
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-wrapper">
+            <p class="footer-caption">Social networks</p>
+            <ul class="socials socials-light footer-socials">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <address class="address footer-address">
+            <p class="footer-caption">Contact us</p>
+            <ul class="address-list">
+              <li class="address-item">
+                <a class="address-link" href="tel:+380684439426">
+                  +380 (68) 443-94-26
+                </a>
+              </li>
+              <li class="address-item">
+                <a class="address-link" href="mailto:simplychoc@gmail.com">
+                  simplychoc@gmail.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-nav">
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#home">Home</a>
             </li>
-            <li class="address-item">
-              <a class="address-link" href="mailto:simplychoc@gmail.com">
-                simplychoc@gmail.com
-              </a>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#made">How it’s made?</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-        </address>
-        <ul class="footer-nav">
-          <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#home">Home</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#made">How it’s made?</a>
-          </li>
-          <li class="footer-nav-item">
-            <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
     <!-- #endregion -->
+
+    <!-- #region Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- #endregion Modal window -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
