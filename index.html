@@ -105,17 +105,25 @@
           <div class="hero-wrapper">
             <ul class="hero-list">
               <li class="hero-item">
-                <button class="btn btn-accent hero-btn" type="button">
+                <button
+                  class="btn btn-accent hero-btn"
+                  type="button"
+                  style="--counter: 2"
+                >
                   Buy now
                 </button>
               </li>
               <li class="hero-item">
-                <button class="btn btn-light hero-btn" type="button">
+                <button
+                  class="btn btn-light hero-btn"
+                  type="button"
+                  style="--counter: 1"
+                >
                   How it’s made
                 </button>
               </li>
             </ul>
-            <a class="hero-link" href="#benefits">
+            <a class="hero-link" href="#benefits" style="--oposite: 1">
               scroll down
               <span class="hero-link-box">
                 <svg class="hero-link-icon" width="22" height="22">
@@ -664,6 +672,74 @@
             <use href="./images/icons.svg#x-close"></use>
           </svg>
         </button>
+        <p class="modal-caption">
+          <strong>
+            LEAVE A REVIEW ABOUT
+            <span class="accent">OUR CHOCOLATE</span>
+          </strong>
+        </p>
+        <form class="modal-form" name="review_form">
+          <label class="modal-form-label" for="review_name">Name</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="text"
+              name="review_name"
+              id="review_name"
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#user"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="review_email">Email</label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="email"
+              name="review_email"
+              id="review_email"
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+          <label class="modal-form-label" for="review_phone">
+            Phone number
+          </label>
+          <div class="modal-form-field">
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="review_phone"
+              id="review_phone"
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+          <label for="review_comment">Comment</label>
+          <textarea
+            name="review_comment"
+            id="review_comment"
+            rows="6"
+            placeholder="Enter text"
+          ></textarea>
+          <label class="modal-form-agreement">
+            <input class="" type="checkbox" />
+            <span class="modal-form-agreement-desc">
+              I accept the terms and conditions of the
+              <a
+                class="modal-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Privacy Policy
+              </a>
+            </span>
+          </label>
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <!-- #endregion Modal window -->

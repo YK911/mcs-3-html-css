@@ -20,6 +20,43 @@
   --trns-slow: 800ms ease-out;
 }
 /* #endregion Variables */
+/* #region Animations */
+@keyframes move-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes move-right {
+  from {
+    opacity: 0;
+    transform: translateX(calc(var(--oposite, -1) * 100px));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 10s */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  20% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* #endregion Animations */
 /* #region Base */
 body {
   font-family: var(--primary-font);
@@ -57,6 +94,9 @@ button {
 }
 img {
   display: block;
+}
+strong {
+  font-weight: inherit;
 }
 /* #endregion Base */
 /* #region Common */
@@ -97,6 +137,8 @@ img {
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: rgb(var(--light-cl));
+
+  animation: move-bottom 500ms ease-in 1000ms both;
 }
 .ingridients-title,
 .made-title,
@@ -179,6 +221,7 @@ img {
   font-style: italic;
 }
 .logo-icon {
+  animation: rotate linear 10s 4s infinite;
 }
 /* #endregion Logo */
 /* #region Socials */
@@ -303,6 +346,13 @@ img {
 .hero-item {
 }
 .hero-btn {
+  animation: move-right 500ms ease-in both;
+}
+.hero-btn.btn-accent {
+  animation-delay: calc(var(--counter) * 300ms + 1500ms);
+}
+.hero-btn.btn-light {
+  animation-delay: calc(var(--counter) * 300ms + 1500ms);
 }
 .hero-link {
   display: flex;
@@ -314,6 +364,8 @@ img {
   color: rgb(var(--white-cl));
   transition: var(--trns-fast);
   transition-property: color;
+
+  animation: move-right 500ms ease-in 2600ms both;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -775,5 +827,35 @@ img {
 }
 .modal-btn-icon {
   stroke: rgb(var(--primary-cl));
+}
+.modal-caption {
+  max-width: 298px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+/* Review form styles */
+.modal-form {
+}
+.modal-form-label {
+}
+.modal-form-field {
+}
+.modal-form-input {
+}
+.modal-form-icon {
+}
+.modal-form-agreement {
+}
+.modal-form-agreement-desc {
+}
+.modal-form-agreement-link {
+}
+.btn {
+}
+.btn-accent {
 }
 /* #endregion Modal window */
