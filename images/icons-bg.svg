@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" viewBox="0 0 32 32">
+  <defs>
+    <style>
+		  .img { display: none }
+		  .img:target { display: inline }
+		</style>
+  </defs>
+  <g id="logo" class="img">
+    <path fill="#fcf1e0" d="M4.314 20.464 15.647 1.797 24.98 7.13l-.667 4.667 2 2-8.667 15.333-13.333-8.667z" style="fill:var(--color1, #fcf1e0)"/>
+    <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M20.37 22.715 6.801 14.236m3.933-6.451 13.569 8.479M9.652 24.927 21.451 5.573m4.49 8.002c-2.908-1.817-4.034-3.263-2.067-6.489l-9.207-5.753L2.868 20.687l13.569 8.479 9.504-15.591z" style="stroke:var(--color2, #fd9222)"/>
+  </g>
+  <g id="arrow" class="img">
+    <path fill="none" stroke="red" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M9.143 16h13.714m0 0-3.429-3.429M22.857 16l-3.429 3.429M16 30.857c8.205 0 14.857-6.652 14.857-14.857S24.205 1.143 16 1.143C7.795 1.143 1.143 7.795 1.143 16S7.795 30.857 16 30.857z"/>
+  </g>
+</svg>
