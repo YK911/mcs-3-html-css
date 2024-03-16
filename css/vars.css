@@ -1,0 +1,22 @@
+/* #region Variables */
+:root {
+  scroll-behavior: smooth;
+  /* Fonts */
+  --primary-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* Colors */
+  --primary-cl: 17, 17, 17;
+  --secondary-cl: 76, 76, 76;
+  --accent-cl: 253, 146, 34;
+  --light-cl: 250, 250, 250;
+  --dark-cl: 30, 24, 35;
+  --white-cl: 255, 255, 255;
+  --beige-cl: 252, 241, 224;
+  /* Others */
+  --radius-sm: 15px;
+  --items: 4;
+  --indent: 32px;
+  --trns-fast: 300ms ease-in;
+  --trns-slow: 800ms ease-out;
+}
+/* #endregion Variables */

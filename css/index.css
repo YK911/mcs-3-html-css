@@ -1,0 +1,19 @@
+@layer choises, select, normalize, slider, custom;
+
+@import 'styles.css' layer(custom);
+@import 'https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css'
+  layer(normalize);
+@import 'https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css'
+  layer(select);
+@import 'https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css'
+  layer(choises);
+@import 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
+  layer(slider);
+
+/* Для браузерів, які не підтримують директиву @layer */
+@supports not at-rule(@layer) {
+  @import url('styles.css');
+  @import url('https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css');
+  @import url('https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css');
+}
