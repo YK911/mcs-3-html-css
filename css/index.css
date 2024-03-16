@@ -12,6 +12,7 @@
 
 /* Для браузерів, які не підтримують директиву @layer */
 @supports not at-rule(@layer) {
+  /* fallback applied for browsers without layer support */
   @import url('styles.css');
   @import url('https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css');
   @import url('https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css');
