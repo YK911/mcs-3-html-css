@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 /* #region Variables */
 :root {
   scroll-behavior: smooth;
@@ -119,41 +123,101 @@ strong {
 .products,
 .bestsellers,
 .reviews {
-  padding: 60px 0;
+  padding: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+  .benefits,
+  .ingridients,
+  .made,
+  .products,
+  .bestsellers,
+  .reviews {
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .benefits,
+  .ingridients,
+  .made,
+  .products,
+  .bestsellers,
+  .reviews {
+    padding: 60px 0;
+  }
 }
 .container {
-  width: 1168px;
+  min-width: 320px;
+  max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 20px;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+  }
 }
 .main-title {
   max-width: 484px;
   margin-bottom: 32px;
   font-weight: 500;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: rgb(var(--light-cl));
-
-  animation: move-bottom 500ms ease-in 1000ms both;
+}
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .main-title {
+    animation: move-bottom 500ms ease-in 1000ms both;
+  }
 }
 .ingridients-title,
 .made-title,
 .products-title,
 .bestsellers-title,
 .reviews-title {
-  width: 412px;
+  max-width: 283px;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .ingridients-title,
+  .made-title,
+  .products-title,
+  .bestsellers-title,
+  .reviews-title {
+    max-width: 412px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingridients-title,
+  .made-title,
+  .products-title,
+  .bestsellers-title,
+  .reviews-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .accent {
   color: rgb(var(--accent-cl));
@@ -447,6 +511,20 @@ strong {
 .ingridients-title {
 }
 .ingridients-list {
+  --items: 1;
+  --indent: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .ingridients-list {
+    --items: 2;
+    --indent: 32px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingridients-list {
+    --items: 4;
+    row-gap: 24px;
+  }
 }
 .ingridients-item {
   position: relative;
@@ -455,6 +533,11 @@ strong {
   border-radius: var(--radius-sm);
   background-color: rgb(var(--white-cl));
   color: rgb(var(--primary-cl));
+}
+@media only screen and (max-width: 767px) {
+  .ingridients-item:nth-last-child(-n + 3) {
+    display: none;
+  }
 }
 .ingridients-item:nth-child(4n + 1) {
   background-color: rgb(var(--accent-cl));
@@ -477,12 +560,18 @@ strong {
   stroke: rgb(var(--accent-cl));
 }
 .ingridients-ill {
+  margin: 0 auto;
 }
 .ingridients-desc {
-  margin-top: 36px;
+  margin-top: 16px;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 1168px) {
+  .ingridients-desc {
+    margin-top: 36px;
+  }
 }
 /* #endregion Ingridients */
 /* #region Made */
@@ -1057,5 +1146,11 @@ input[type='checkbox']:checked ~ .checkbox > .checkbox-icon {
   100% {
     transform: rotate(0);
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  body {
+    background-color: #fff;
   }
 }
