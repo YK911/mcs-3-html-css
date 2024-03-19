@@ -1,6 +1,6 @@
 # HTML-CSS course for Master of Computer Science: Software Engineering
 
-## План заняття (18.03.2024):
+## План заняття (19.03.2024):
 
 - Медіа-запити: `media-type` та `media-feature`
 - Медіа-функції `min-width` та `max-width`
